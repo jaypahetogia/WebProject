@@ -1,0 +1,76 @@
+title {
+	position: fixed;
+	color: red;
+}
+p { 
+	color: #ff0000;
+}
+ol li{	/*the space in between the ol and li is an operator like + & - */
+	color: orange;
+}
+
+:target {
+	outline: 2px solid orange;
+}
+
+a:hover {	/*changes color to black when mouse hovers over it */
+	color: red;
+	transition: color 1.5s;	/*change color takes 1.5s long */
+}
+
+p + video {
+	width: 200px;	/*any video after p paragraph will have 200px */
+}
+
+#topright {
+	background-color: red;
+}
+
+@keyframes blink { from { opacity: 1; } 33% { opacity: 0; } 66% { opacity: 1;}
+}
+body {animation: blink 1s infinite;
+	
+}
+
+table {
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+ul > li {
+	background-color: pink;
+	boarder: 2px solid blue;
+	animation: blink;
+}
+
+li.important {	/*the space between li and .important will mean different if no space*/
+	font-size: 20pt;
+}
+
+table {
+	border: 2px solid yellow;
+	/*above is short hand for below. However, must know the order they go in */
+	/*boarder-width: 2px
+	boarder-style:dashed
+	boarder-color: yellow*/
+}
+
+#special {
+background-color: purple;
+}
+
+.important{
+	text-decoration: underline;
+}
+
+strong {
+	color: rgb(255, o, 255);
+	background-color: blue;
+}
+body{
+	/*background-color: hsl(120, 100%, 30%);
+	color:blue;*/
+	background-image: url(https://img.lovepik.com/background/20211022/large/lovepik-blue-technology-digital-background-image_500602932.jpg);
+	
+}
